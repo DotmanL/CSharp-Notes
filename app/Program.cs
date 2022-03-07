@@ -47,6 +47,60 @@ namespace app
        double r = 5;
        double area = pi*r*r;
 
+       //operators - basic assignment, arithmetic, relational, logical, unary, tenary, bitwise & bit shift, compound assign
+       //https://www.w3schools.com/cs/cs_operators.php
+        double firstNr = 5, secondNr = 7, result;
+        int num1 = 26, num2 = 4, reminder;
+
+        //addition
+        result = firstNr + secondNr;
+           Console.WriteLine(result);
+
+      //modulus operator 
+      reminder = num1 % num2;
+      Console.WriteLine(reminder);
+
+      //Relational operator (==, >, <, >= !=) - returns a bool
+      bool resNumber;
+      int firstNumber = 10, secondNumber = 50;
+      resNumber=(firstNumber == secondNumber);
+      Console.WriteLine(resNumber);
+
+      //Logical operators (OR-||, AND -&&)
+    //or Example
+    resNumber=(firstNumber == secondNumber) || firstNumber > 5;
+      Console.WriteLine(resNumber);
+
+    //and Example
+    resNumber=(firstNumber == secondNumber) && firstNumber > 5;
+      Console.WriteLine(resNumber);
+    
+    //unary operators -- either increase of decrease a value=(++, --, !)
+    int uNumber = 20, uResult;
+    uResult = ++uNumber;
+    Console.WriteLine(uNumber);
+
+    //ternary operatoors (? :, )
+    int tNumber = 25;
+    string tResult;
+    tResult =(tNumber > 0) ? "Greater" :  "Not Greater";
+    Console.WriteLine(tResult);
+    
+    //BitWise & Bitshift operators - not really used
+
+    //Compund assignment operators
+    int cNumber = 10;
+
+    cNumber += 5;
+    Console.WriteLine(cNumber);
+
+    cNumber <<= 5;
+    Console.WriteLine(cNumber);
+    
+    cNumber >>= 5;
+    Console.WriteLine(cNumber);
+
+
             Console.WriteLine("Hello World!");
             // Circle circle = new Circle();
             Console.WriteLine($"Size of int {sizeof(int)}");
