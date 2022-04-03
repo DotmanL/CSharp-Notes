@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Dotman\\source\\repos\\LearningCsharp\\LearningCsharp.csproj": {}
+    "C:\\Users\\Dotman\\Desktop\\LearningCsharp\\LearningCsharp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Dotman\\source\\repos\\LearningCsharp\\LearningCsharp.csproj": {
+    "C:\\Users\\Dotman\\Desktop\\LearningCsharp\\LearningCsharp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Dotman\\source\\repos\\LearningCsharp\\LearningCsharp.csproj",
+        "projectUniqueName": "C:\\Users\\Dotman\\Desktop\\LearningCsharp\\LearningCsharp.csproj",
         "projectName": "LearningCsharp",
-        "projectPath": "C:\\Users\\Dotman\\source\\repos\\LearningCsharp\\LearningCsharp.csproj",
+        "projectPath": "C:\\Users\\Dotman\\Desktop\\LearningCsharp\\LearningCsharp.csproj",
         "packagesPath": "C:\\Users\\Dotman\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Dotman\\source\\repos\\LearningCsharp\\obj\\",
+        "outputPath": "C:\\Users\\Dotman\\Desktop\\LearningCsharp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Dotman\\AppData\\Roaming\\NuGet\\NuGet.Config",

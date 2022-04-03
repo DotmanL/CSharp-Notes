@@ -17,7 +17,7 @@ namespace app
 {
     class LearningCsharp
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             //Type Conversion -- Implicit -- smaller to larger data types, derive to base classes
             //Explicit-- larger to smaller data types, possible data loss
@@ -28,10 +28,15 @@ namespace app
             //implicit conversion - no data loss
             int num = 123456789;
             long newNum = num;
+            Console.WriteLine("Hello World!");
+            Console.WriteLine($"Size of int {sizeof(int)}");
+            Console.WriteLine(newNum);
 
             //explicit conversion - data loss
             double x = 1234.5;
             int a = (int)x;
+
+            Console.WriteLine(a);
 
             //variable definition
             // string message = "Hello Dot";
@@ -98,39 +103,133 @@ namespace app
             cNumber >>= 5;
             Console.WriteLine(cNumber);
 
+            //Decison Statements
+            //if, if/else, else/if, switch
+            int numberif = 0;
+            if (numberif > 0)
+            {
+                Console.WriteLine("It is a positive number");
+            }
+            else
+            {
+                Console.WriteLine("It is not a positive number");
+            }
 
-            Console.WriteLine("Hello World!");
-            // Circle circle = new Circle();
-            Console.WriteLine($"Size of int {sizeof(int)}");
-            Console.WriteLine(newNum);
-            Console.WriteLine(a);
-            Console.WriteLine("Area: {0}", area);
+            //Else if example
+            if (numberif > 0)
+            {
+                Console.WriteLine("It is a positive number");
+            }
+            else if (numberif > 0)
+            {
+                Console.WriteLine("It is not a negative number");
+            }
+            else
+            {
+                Console.WriteLine("It is 0");
+            }
+
+            //Switch statements(to avoid many if else statements
+            string day = "Tues";
+
+            switch (day)
+            {
+                case "Monday":
+                    Console.WriteLine("It is Monday");
+                    break;
+                case "Tuesday":
+                    Console.WriteLine("It is Tuesday");
+                    break;
+                case "Wednesday":
+                    Console.WriteLine("It is Wednesday");
+                    break;
+                case "Thursday":
+                    Console.WriteLine("It is Thursday");
+                    break;
+                default:
+                    Console.WriteLine("It is a weekend");
+                    break;
+            }
+
+            //Loops - for, while, do-while
+
+            for (int i = 1; i < 11; i++)
+            {
+                Console.WriteLine($"{i} - Hello from C#!");
+            }
+            //while
+            int j = 1;
+            while (j < 11)
+            {
+                Console.WriteLine($"{j} - Hello from C#!");
+                j += 2;
+            }
+
+            //do while -- code is executed at least one time
+            int k = 1;
+            do
+            {
+                Console.WriteLine($"{k} - Hello from C#!");
+                k++;
+            } while (k < 11);
+
+            //Access modifiers - specify level at which variable, 
+            // object or function can be accessed, five types which are
+            // public, provate, protected, internal, protected internal
+            // public class can be accessed anywhere within the application
+            // private class can accessed from only within the class
+            // protectd can only be accessed from within the defined class and child classes.
+            //internal accesses from within same assembly, that is student class and program class
+            // belong to the same assemblly
+            //protected internal -- accessed from child classes within the same assembly
+            //example
+
+
+            Student student = new Student("John", "Smith", 20);
+            Console.WriteLine($"First Name - {student.firstName}");
+
+            Console.WriteLine($"Last Name - {student.lastName}");
+            Console.WriteLine($"Age - {student.age}");
+
+            //functions-- encapsulated a piece of code and call within our code
+            // <visibility -- public/private><return type><name>(<parameters>)
+         
+            double firstSum = AddNumbers(10, 20);
+            Console.WriteLine($"First Sum = {firstSum}");
+
+            Hello();
+    }
+        //function example
+        public static double AddNumbers(double a, double b) => a + b;
+        
+        // with no return type, use void
+        public static void Hello()
+        {
+            Console.WriteLine("Hello from a void function");
+        }
+        
+        
+        //Access modifiers example
+        public class Student
+        {
+            public string firstName;
+            public string lastName;
+            //private would make age not accessible outside the class 
+            public int age;
+
+            public Student(string firstName, string lastName, int age)
+            {
+                this.firstName = firstName;
+                this.lastName = lastName;
+                this.age = age;
+            }
         }
     }
+
+
+
+   
+
 }
-//Basic Syntax
-
-// class Circle
-// {
-//member of this class stored with variables
-//     double radius;
-//     double pi =3.14;
-
-//     public void AcceptRadius(){
-//       radius = 4.5;
-
-//     } 
-
-//     public double GetArea()
-//     {
-//       return pi*radius*radius;
-//     }  
-
-//     public void ShowResults()
-//     {
-//       Console.WriteLine("Radius: {0}, radius");
-//       Console.WriteLine("Area: {0}, GetArea()");
-//     }
-// }
 
 
